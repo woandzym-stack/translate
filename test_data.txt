@@ -1,0 +1,103 @@
+正常输入1
+{
+  "text": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed.",
+  "output_format": "word",
+  "include_vocabulary": true
+}
+
+正常输入2
+{
+  "text": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed.",
+  "output_format": "word",
+  "include_vocabulary": false
+}
+
+正常输入3
+{
+  "text": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed.",
+  "output_format": "json",
+  "include_vocabulary": true
+}
+
+正常输入4
+{
+  "text": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed.",
+  "output_format": "json",
+  "include_vocabulary": false
+}
+
+正常输入5
+{
+  "text": "Hello world",
+  "output_format": "word", 
+  "include_vocabulary": true
+}
+
+正常输入6
+{
+  "text": "You’ve dwelled too long in the familiar, a prisoner of repetition disguised named safety. The same faces. The same cracked ceilings. The same breathless cycle, day after day. And now, life demands a cruel thing of you: to leave. To do something you do not understand. To begin again, with nothing in your hands but fear.",
+  "output_format": "word", 
+  "include_vocabulary": true
+}
+
+异常情况测试1
+{
+  "text": "",
+  "output_format": "word",
+  "include_vocabulary": true
+}
+
+异常情况测试2
+{
+    "output_format": "word",
+    "include_vocabulary": true
+}
+
+异常情况测试3
+{
+  "text": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed.",
+  "output_format": "xml",
+  "include_vocabulary": true
+}
+
+异常情况测试4
+{
+  "text": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed.",
+  "output_format": "word",
+  "include_vocabulary": "true123"
+}
+
+特殊内容测试(中英混合)
+{
+  "text": "AI技术 helps improve business efficiency significantly.",
+  "output_format": "json",
+  "include_vocabulary": true
+}
+
+特殊内容测试(纯中文)
+{
+  "text": "人工智能正在改变世界。",
+  "output_format": "word",
+  "include_vocabulary": false
+}
+
+特殊内容测试(空格)
+{
+  "text": "   ",
+  "output_format": "word",
+  "include_vocabulary": false
+}
+
+特殊内容测试(混合html)
+{
+  "text": "<div>Machine learning improves automation</div>",
+  "output_format": "word",
+  "include_vocabulary": true
+}
+
+
+
+
+
+
+

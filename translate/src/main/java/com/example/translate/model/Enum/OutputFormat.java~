@@ -1,0 +1,25 @@
+package com.example.translate.model.Enum;
+
+import org.apache.commons.lang3.StringUtils;
+
+public enum OutputFormat {
+    JSON("json","json格式"),
+    WORD("word","word文档");
+
+    private String code;
+    private String desc;
+
+    OutputFormat(String code, String desc) {
+        this.code = code;
+        this.desc = desc;
+    }
+
+    public static OutputFormat getFormat(String code) {
+        for (OutputFormat format : OutputFormat.values()) {
+            if(StringUtils.equals(format.code, code)) {
+                return format;
+            }
+        }
+        return null;
+    }
+}

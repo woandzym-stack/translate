@@ -10,3 +10,4 @@
 
 6.screenshots.png 是使用apipost调用接口的截图
 
+7.deepseek使用记录：https://chat.deepseek.com/share/y3bd87nut85llwht23
